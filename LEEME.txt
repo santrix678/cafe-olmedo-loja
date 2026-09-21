@@ -1,0 +1,31 @@
+CÓMO ABRIR LA PÁGINA EN VISUAL STUDIO CODE
+
+1. Descomprime el archivo cafe-olmedo-codigo.zip.
+2. Abre Visual Studio Code.
+3. Selecciona Archivo > Abrir carpeta.
+4. Escoge la carpeta entrega-cafe-olmedo.
+5. Abre index.html.
+6. Para verla, haz doble clic en index.html o usa la extensión Live Server.
+
+ARCHIVOS PRINCIPALES
+
+- index.html: estructura y textos de la página.
+- assets/styles.css: colores, diseño y adaptación a celular.
+- assets/app.js: menú, cálculo del precio y pedido por WhatsApp.
+- assets/: fotografías y videos del emprendimiento.
+
+WHATSAPP
+
+Actualmente el botón abre WhatsApp y permite elegir el contacto. Para enviar
+todos los pedidos directamente a un número, cambia en assets/app.js esta línea:
+
+https://api.whatsapp.com/send?text=
+
+por una dirección como esta, usando el número de Ecuador sin +, espacios ni guiones:
+
+https://api.whatsapp.com/send?phone=593XXXXXXXXX&text=
+
+PRECIO
+
+El precio está configurado en 6 dólares por funda. Para cambiarlo, busca el
+número 6 dentro de assets/app.js y los textos de precio dentro de index.html.
